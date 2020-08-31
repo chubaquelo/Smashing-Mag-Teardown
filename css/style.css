@@ -22,6 +22,10 @@
   grid-column: span 2;
 }
 
+.span3 {
+  grid-column: span 3;
+}
+
 img {
   max-width: 100%;
 }
@@ -272,4 +276,82 @@ nav ul li:last-child:hover {
   height: 120px;
   justify-content: left;
   align-items: flex-end;
+}
+
+/* HERE BEGINS THE SECTION OF "LATEST POSTS", IT'S A GRID UNTIL "SEE ALL RELATED ARTS" */
+
+.latest-posts {
+  grid-template-rows: 100vh 100vh 100vh 100vh 32vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f6f3f2;
+  padding: 15px;
+}
+
+.lp-item {
+  border: 1px solid #000;
+  padding: 15px;
+  position: relative;
+}
+
+.lp-item h2 {
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+.lp-item h2 a {
+  color: #000;
+}
+.lp-item p {
+  padding-top: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.date-published {
+  font-size: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #666;
+}
+
+.author-link,
+.author-link a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+}
+
+.author-link a:hover {
+  color: #000;
+}
+
+.latest-posts-arrow-button {
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.latest-posts-arrow-button:hover {
+  background-color: #bcbcbc;
+}
+
+.lp-item10 {
+  justify-content: center;
+  align-items: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.lp-item10 a {
+  text-decoration: none;
+  border-bottom: 4px solid #333;
+  padding-bottom: 4px;
+}
+
+.lp-item4,
+.lp-item9 {
+  border-radius: 10px;
 }
