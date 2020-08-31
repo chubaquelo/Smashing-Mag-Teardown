@@ -107,10 +107,6 @@ nav ul li:hover {
   background-color: rgb(114, 114, 114);
 }
 
-nav ul li:first-child {
-  background-color: rgb(160, 160, 160);
-}
-
 nav ul li:last-child {
   background-color: rgb(114, 114, 114);
 }
@@ -141,25 +137,25 @@ nav ul li:last-child:hover {
 
 .featured-articles-container {
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 225px 500px 500px;
+  grid-template-rows: 160px 560px 560px;
   background: rgb(114, 114, 114);
 }
 
+/* General padding for each of 4 main displayed articles */
 .item {
   padding: 0 40px;
   cursor: pointer;
 }
-
+/* Item 2 is the where the H1 is */
 .item2 {
-  /* grid-column: span 2; */
-  /* background-color: darkviolet; */
-  margin-left: 1px;
   background: rgb(114, 114, 114);
   background: linear-gradient(
     90deg,
     rgba(114, 114, 114, 1) 50%,
     rgba(160, 160, 160, 1) 50%
   );
+  /* This 1px margin below is to fix a gradient background pixel line */
+  margin-left: 1px;
 }
 
 .item2 h1 {
@@ -173,9 +169,13 @@ nav ul li:last-child:hover {
   padding: 8px;
 }
 
+/* Item 3 is where the red/white color changer switch is */
 .item3 {
   align-items: flex-start;
   justify-content: flex-end;
+}
+
+.item4 {
 }
 
 /* COLOR SELECTOR STYLE */
@@ -225,6 +225,7 @@ nav ul li:last-child:hover {
   align-items: flex-start;
   justify-content: left;
   height: 100px;
+  margin-top: 80px;
 }
 
 .author-main-cont .animated-sqr {
@@ -268,7 +269,7 @@ nav ul li:last-child:hover {
 
 .art-bottom-arrow {
   color: #fff;
-  height: 180px;
+  height: 120px;
   justify-content: left;
   align-items: flex-end;
 }
