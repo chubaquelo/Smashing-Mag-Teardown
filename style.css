@@ -1,0 +1,88 @@
+/* GLOBAL CLASSES */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tc {
+  text-align: center;
+}
+
+.cpointer {
+  cursor: pointer;
+}
+
+/* HEADER CLASSES */
+
+header {
+  height: 70px;
+  width: 96%;
+  padding: 1% 2%;
+  background-color: #bcbcbc;
+}
+
+.logo {
+  height: 100%;
+  width: 16%;
+  padding-top: 2%;
+}
+
+nav {
+  height: 100%;
+  width: 53%;
+}
+
+nav ul li {
+  display: inline-flex;
+  border-radius: 10px;
+  margin-left: 15px;
+  height: 45px;
+  width: 90px;
+  border: 2px solid #fff;
+}
+
+nav ul li:hover {
+  background-color: rgb(114, 114, 114);
+}
+
+nav ul li:first-child {
+  background-color: rgb(160, 160, 160);
+}
+
+nav ul li:last-child {
+  background-color: rgb(114, 114, 114);
+}
+
+nav ul li:last-child:hover {
+  background-color: #bcbcbc;
+}
+
+.search-bar {
+  height: 100%;
+  width: 29%;
+}
+
+.search-bar input {
+  width: 80%;
+  border: 0;
+  height: 55px;
+  border-radius: 10px;
+  padding-left: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  background-image: url(/img/magnifier.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}

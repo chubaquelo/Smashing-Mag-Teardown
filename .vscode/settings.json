@@ -1,0 +1,8 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "phase"
+}
