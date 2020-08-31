@@ -12,6 +12,10 @@
   flex-wrap: nowrap;
 }
 
+.d-grid {
+  display: grid;
+}
+
 img {
   max-width: 100%;
 }
@@ -22,6 +26,10 @@ img {
 
 .cpointer {
   cursor: pointer;
+}
+
+.rotate15 {
+  rotation: 15deg;
 }
 
 /* HEADER CLASSES */
@@ -37,6 +45,10 @@ header {
   height: 100%;
   width: 16%;
   padding-top: 2%;
+}
+
+.logo a {
+  width: 90%;
 }
 
 nav {
@@ -79,10 +91,20 @@ nav ul li:last-child:hover {
   border: 0;
   height: 55px;
   border-radius: 10px;
-  padding-left: 40px;
-  font-size: 18px;
+  padding-left: 50px;
+  font-size: 20px;
   font-weight: 700;
   background-image: url(/img/magnifier.jpg);
   background-repeat: no-repeat;
   background-position: left;
+}
+
+/* BEGIN OF MAIN ARTICLES STYLING */
+
+.featured-articles-container {
+  grid-template: repeat(4, 1fr);
+  background-color: darkorange;
+}
+
+.item1 {
 }
