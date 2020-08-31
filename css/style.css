@@ -3,25 +3,64 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: AvenirNext, Avenir, -apple-system, BlinkMacSystemFont,
+    Roboto Slab, Droid Serif, Segoe UI, Oxygen-Sans, Ubuntu, Cantarell, Georgia,
+    serif;
+  color: #333;
 }
 
 .d-flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .d-grid {
   display: grid;
 }
 
+.span2 {
+  grid-column: span 2;
+}
+
 img {
   max-width: 100%;
 }
 
-.tc {
+.white-bg {
+  background-color: #fff;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.black-color {
+  color: #000;
+}
+
+.lightgrey-bg {
+  background-color: #bcbcbc;
+}
+
+.mediumgrey-bg {
+  background-color: rgb(160, 160, 160);
+}
+
+.darkgrey-bg {
+  background-color: rgb(114, 114, 114);
+}
+
+.b-rad10 {
+  border-radius: 10px;
+}
+
+.b-rad5 {
+  border-radius: 5px;
+}
+
+.txtc {
   text-align: center;
+  vertical-align: middle;
 }
 
 .cpointer {
@@ -29,22 +68,21 @@ img {
 }
 
 .rotate15 {
-  rotation: 15deg;
+  rotate: 15deg;
 }
 
-/* HEADER CLASSES */
+/* HEADER CLASSES: logo, nav, search-bar */
 
 header {
   height: 70px;
   width: 96%;
-  padding: 1% 2%;
-  background-color: #bcbcbc;
+  padding: 20px 2% 10px 2%;
 }
 
 .logo {
   height: 100%;
   width: 16%;
-  padding-top: 2%;
+  padding-top: 5px;
 }
 
 .logo a {
@@ -59,7 +97,7 @@ nav {
 nav ul li {
   display: inline-flex;
   border-radius: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
   height: 45px;
   width: 90px;
   border: 2px solid #fff;
@@ -92,19 +130,145 @@ nav ul li:last-child:hover {
   height: 55px;
   border-radius: 10px;
   padding-left: 50px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   background-image: url(/img/magnifier.jpg);
   background-repeat: no-repeat;
   background-position: left;
 }
 
-/* BEGIN OF MAIN ARTICLES STYLING */
+/* BEGIN OF MAIN ARTICLES DISPLAY STYLING */
 
 .featured-articles-container {
-  grid-template: repeat(4, 1fr);
-  background-color: darkorange;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 225px 500px 500px;
+  background: rgb(114, 114, 114);
 }
 
-.item1 {
+.item {
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.item2 {
+  /* grid-column: span 2; */
+  /* background-color: darkviolet; */
+  margin-left: 1px;
+  background: rgb(114, 114, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(114, 114, 114, 1) 50%,
+    rgba(160, 160, 160, 1) 50%
+  );
+}
+
+.item2 h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 55px 60px;
+}
+
+.item2 h1 span {
+  background-color: #fff;
+  padding: 8px;
+}
+
+.item3 {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/* COLOR SELECTOR STYLE */
+
+.color-changer-cont {
+  margin: 55px 10px;
+  width: 80%;
+  height: 50px;
+  justify-content: left;
+  align-items: center;
+}
+
+.animated-sqr {
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  transform: rotate(-15deg);
+  transform-origin: left;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.animated-sqr:hover {
+  transform: rotate(0deg);
+  transform-origin: left;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.seriously-red {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.seriously-red:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* MAIN ARTICLES BLOCKS STYLE */
+
+.author-main-cont {
+  align-items: flex-start;
+  justify-content: left;
+  height: 100px;
+}
+
+.author-main-cont .animated-sqr {
+  width: 75px;
+  height: 75px;
+}
+
+.author-main-cont .author-wrote {
+  width: 200px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.article-title-span {
+  width: 90%;
+  height: 50px;
+  align-items: flex-start;
+}
+
+.article-title-span h2 {
+  font-size: 42px;
+  background-color: transparent;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.article-title-span h2 span {
+  font-size: 16px;
+}
+
+.hashtags {
+  /* width: 100%; */
+  margin-top: 100px;
+}
+
+.hashtags ul li {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  padding-right: 35px;
+}
+
+.art-bottom-arrow {
+  color: #fff;
+  height: 180px;
+  justify-content: left;
+  align-items: flex-end;
 }
