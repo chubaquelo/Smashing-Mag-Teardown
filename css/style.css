@@ -232,7 +232,7 @@ nav {
       90deg,
       rgba(114, 114, 114, 1) 50%,
       rgba(160, 160, 160, 1) 50%
-  );
+    );
 
   /* This 1px margin below is to fix a gradient background pixel line */
   margin-left: 1px;
