@@ -227,7 +227,8 @@ nav {
 /* Item 2 is the where the H1 is */
 .item2 {
   background: rgb(114, 114, 114);
-  background: linear-gradient(
+  background: 
+  linear-gradient(
     90deg,
     rgba(114, 114, 114, 1) 50%,
     rgba(160, 160, 160, 1) 50%
@@ -375,6 +376,7 @@ nav {
 .lp-item h2 a {
   color: #000;
 }
+
 .lp-item p {
   padding-top: 15px;
   font-size: 1.2em;
@@ -495,7 +497,6 @@ nav {
   padding: 25px 20%;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 10px; */
 }
 
 /* Community links grid */
@@ -674,12 +675,12 @@ footer {
   background-color: #fff;
 }
 
-.foot-b-2 a {
+.foot-b-2-a {
   text-decoration: underline;
   font-size: 1.1em;
 }
 
-.foot-b-2 a:hover {
+.foot-b-2-a:hover {
   text-decoration: underline;
   color: #fff;
 }
