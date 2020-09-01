@@ -581,6 +581,10 @@ footer {
   height: 100vh;
 }
 
+footer img {
+  filter: grayscale(100%);
+}
+
 .footer-nav {
   padding: 35px 0;
 }
