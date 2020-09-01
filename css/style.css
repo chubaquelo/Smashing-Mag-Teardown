@@ -12,6 +12,10 @@
   color: #333;
 }
 
+body {
+  max-width: 1440px;
+}
+
 .d-flex {
   display: flex;
   flex-wrap: wrap;
