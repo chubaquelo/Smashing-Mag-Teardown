@@ -59,6 +59,10 @@ img {
   color: #000;
 }
 
+.lightergrey-bg {
+  background: #f6f3f2;
+}
+
 .lightgrey-bg {
   background-color: #bcbcbc;
 }
@@ -88,6 +92,10 @@ img {
   vertical-align: middle;
 }
 
+.seriffy {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .cpointer {
   cursor: pointer;
 }
@@ -106,9 +114,9 @@ img {
   height: 70px;
 }
 
-.sqr250px {
-  width: 250px;
-  height: 250px;
+.sqr200px {
+  width: 200px;
+  height: 200px;
 }
 
 .sqrborderbig {
@@ -117,6 +125,11 @@ img {
 
 .sqrborderthin {
   border: 5px solid #666;
+}
+
+.space-25px {
+  width: 100%;
+  height: 25px;
 }
 
 .space-50px {
@@ -191,7 +204,6 @@ nav ul li:last-child:hover {
 .featured-articles-container {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 160px 560px 560px;
-  background: rgb(114, 114, 114);
 }
 
 /* General padding for each of 4 main displayed articles */
@@ -352,14 +364,12 @@ nav ul li:last-child:hover {
 }
 .lp-item p {
   padding-top: 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1.2em;
   line-height: 2;
 }
 
 .date-published {
   font-size: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: #666;
 }
 
@@ -407,12 +417,15 @@ nav ul li:last-child:hover {
   font-size: 2.8rem;
   margin: 25px 0;
   text-decoration: underline #666;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .ad-txt {
+  font-size: 1.2rem;
   line-height: 2.4rem;
   padding: 0 10%;
   margin-bottom: 30px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .white-btn,
@@ -471,6 +484,7 @@ nav ul li:last-child:hover {
   padding: 25px 20%;
   justify-content: center;
   align-items: center;
+  /* margin-bottom: 10px; */
 }
 
 /* Community links grid */
@@ -479,12 +493,12 @@ nav ul li:last-child:hover {
   padding-top: 25px;
   justify-content: center;
   gap: 10px;
-  grid-template-rows: 300px;
+  grid-template-rows: 320px;
   grid-template-columns: repeat(2, 8% 35%);
 }
 
 .cl-item {
-  height: 300px;
+  height: 325px;
 }
 
 /* TEXT - TITLES AND CONTENT PLACEHOLDERS NOW ON... */
@@ -562,5 +576,88 @@ nav ul li:last-child:hover {
 /* FOOTER Style */
 
 footer {
+  padding: 35px 75px 20px 75px;
+  flex-flow: column;
   height: 100vh;
+}
+
+.footer-nav {
+  padding: 35px 0;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 5px 0;
+  color: #535353;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #000;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.bullet {
+  font-size: 30px;
+}
+
+/* FOOTER but only last row (3 cols flex) */
+
+.footer-bottom-cont {
+  height: 100px;
+  width: 100%;
+}
+
+.foot-b-1 {
+  width: 30%;
+  background-color: red;
+}
+
+.foot-b-2 {
+  width: 40%;
+  flex-flow: column;
+}
+
+.foot-b-2 .txt {
+  width: 200px;
+  height: 15px;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+.foot-b-2 a {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.foot-b-2 a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-nav-2 {
+  height: 20px;
+  padding: 20px 0 0 0;
+}
+
+.foot-b-2 ul li {
+  display: inline-flex;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.foot-b-2 ul li:hover {
+  color: #fff;
+}
+
+.foot-b-3 {
+  width: 30%;
+  background-color: green;
 }
