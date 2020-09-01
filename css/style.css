@@ -219,6 +219,7 @@ nav ul li:last-child:hover {
   padding: 0 40px;
   cursor: pointer;
 }
+
 /* Item 2 is the where the H1 is */
 .item2 {
   background: rgb(114, 114, 114);
@@ -227,6 +228,7 @@ nav ul li:last-child:hover {
     rgba(114, 114, 114, 1) 50%,
     rgba(160, 160, 160, 1) 50%
   );
+
   /* This 1px margin below is to fix a gradient background pixel line */
   margin-left: 1px;
 }
@@ -573,7 +575,6 @@ nav ul li:last-child:hover {
 
 .og-item {
   border: 1px solid #ccc;
-  /* height: 350px; */
   border-radius: 5px;
   padding: 35px;
 }
@@ -613,7 +614,7 @@ nav ul li:last-child:hover {
 /* FOOTER Style */
 
 footer {
-  padding: 0px 75px 40px 75px;
+  padding: 0 75px 40px 75px;
   flex-flow: column;
   height: 100vh;
 }
