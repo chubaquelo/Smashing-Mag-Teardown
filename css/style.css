@@ -47,6 +47,10 @@ img {
   max-width: 100%;
 }
 
+.bwfilter {
+  filter: grayscale(100%);
+}
+
 .white-bg {
   background-color: #fff;
 }
@@ -94,6 +98,10 @@ img {
 
 .seriffy {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.txt-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .cpointer {
@@ -307,7 +315,6 @@ nav ul li:last-child:hover {
 .article-title-span h2 {
   font-size: 42px;
   background-color: transparent;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .article-title-span h2 span {
@@ -417,7 +424,6 @@ nav ul li:last-child:hover {
   font-size: 2.8rem;
   margin: 25px 0;
   text-decoration: underline #666;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .ad-txt {
@@ -425,7 +431,6 @@ nav ul li:last-child:hover {
   line-height: 2.4rem;
   padding: 0 10%;
   margin-bottom: 30px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .white-btn,
@@ -573,16 +578,44 @@ nav ul li:last-child:hover {
   padding: 20px;
 }
 
+.newsletter {
+  margin: 25px 0;
+}
+
+.newsletter input {
+  width: 70%;
+  font-size: 20px;
+  height: 55px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  font-weight: 700;
+  font-size: 1.2em;
+  width: 20%;
+  height: 57px;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  border: 1px solid #ccc;
+}
+
+.newsletter-call {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
 /* FOOTER Style */
 
 footer {
   padding: 0px 75px 40px 75px;
   flex-flow: column;
   height: 100vh;
-}
-
-footer img {
-  filter: grayscale(100%);
 }
 
 .footer-nav {
