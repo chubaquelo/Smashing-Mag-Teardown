@@ -26,6 +26,14 @@
   grid-column: span 3;
 }
 
+.span4 {
+  grid-column: span 4;
+}
+
+.fleft {
+  float: left;
+}
+
 img {
   max-width: 100%;
 }
@@ -52,6 +60,10 @@ img {
 
 .darkgrey-bg {
   background-color: rgb(114, 114, 114);
+}
+
+.ml-300px {
+  margin-left: 300px;
 }
 
 .b-rad10 {
@@ -179,9 +191,6 @@ nav ul li:last-child:hover {
   justify-content: flex-end;
 }
 
-.item4 {
-}
-
 /* COLOR SELECTOR STYLE */
 
 .color-changer-cont {
@@ -278,19 +287,25 @@ nav ul li:last-child:hover {
   align-items: flex-end;
 }
 
+.art-bottom-arrow i {
+  color: #fff;
+}
+
 /* HERE BEGINS THE SECTION OF "LATEST POSTS", IT'S A GRID UNTIL "SEE ALL RELATED ARTS" */
 
 .latest-posts {
   grid-template-rows: 100vh 100vh 100vh 100vh 32vh;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #f6f3f2;
+  row-gap: 45px;
   padding: 15px;
 }
 
 .lp-item {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   padding: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .lp-item h2 {
@@ -339,6 +354,45 @@ nav ul li:last-child:hover {
   background-color: #bcbcbc;
 }
 
+.lp-item4,
+.lp-item9 {
+  border-radius: 10px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-item4 img,
+.lp-item9 img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.ad-title {
+  font-size: 2.8rem;
+  margin: 25px 0;
+  text-decoration: underline #666;
+}
+
+.ad-txt {
+  line-height: 2.4rem;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+
+.white-btn {
+  width: 275px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
 .lp-item10 {
   justify-content: center;
   align-items: center;
@@ -351,7 +405,55 @@ nav ul li:last-child:hover {
   padding-bottom: 4px;
 }
 
-.lp-item4,
-.lp-item9 {
-  border-radius: 10px;
+.focus-grow:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+/* Shipping Ad (blue on original) */
+
+.shipping-ad {
+  flex-flow: column;
+  padding: 25px 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Community links grid */
+
+.community-links {
+  padding-top: 25px;
+  justify-content: center;
+  gap: 10px;
+  grid-template-rows: 300px;
+  grid-template-columns: repeat(2, 8% 35%);
+}
+
+.cl-item {
+  border: 1px solid #000;
+  height: 300px;
+}
+
+.cl-item1 .animated-sqr {
+  width: 250px;
+  height: 250px;
+  border: 10px solid #666;
+}
+
+/* TEXT - TITLES AND CONTENT PLACEHOLDERS NOW ON... */
+
+.small-title-placeholder {
+  background-color: #666;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.paragraph-placeholder {
+  margin-top: 10px;
+  background-color: #999;
+  width: 70%;
+  height: 20px;
+  border-radius: 5px;
 }
