@@ -3,9 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: AvenirNext, Avenir, -apple-system, BlinkMacSystemFont,
-    Roboto Slab, Droid Serif, Segoe UI, Oxygen-Sans, Ubuntu, Cantarell, Georgia,
-    serif;
+  font-family: AvenirNext, Avenir, BlinkMacSystemFont, "Roboto Slab",
+    "Droid Serif", "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Georgia, serif;
   color: #333;
 }
 
@@ -111,10 +110,6 @@ img {
 
 .cpointer {
   cursor: pointer;
-}
-
-.rotate15 {
-  rotate: 15deg;
 }
 
 .sqr50px {
