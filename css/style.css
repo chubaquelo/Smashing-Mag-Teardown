@@ -35,6 +35,10 @@
   grid-column: span 4;
 }
 
+/* .icons {
+  fill: #fff;
+} */
+
 .fleft {
   float: left;
 }
@@ -45,6 +49,7 @@
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 .bwfilter {
@@ -575,7 +580,7 @@ nav ul li:last-child:hover {
   border: 1px solid #ccc;
   /* height: 350px; */
   border-radius: 5px;
-  padding: 20px;
+  padding: 35px;
 }
 
 .newsletter {
