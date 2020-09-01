@@ -14,6 +14,11 @@
   flex-wrap: wrap;
 }
 
+.flex-center-all {
+  justify-content: center;
+  align-items: center;
+}
+
 .d-grid {
   display: grid;
 }
@@ -32,6 +37,10 @@
 
 .fleft {
   float: left;
+}
+
+.fright {
+  float: right;
 }
 
 img {
@@ -85,6 +94,33 @@ img {
 
 .rotate15 {
   rotate: 15deg;
+}
+
+.sqr50px {
+  width: 50px;
+  height: 50px;
+}
+
+.sqr70px {
+  width: 70px;
+  height: 70px;
+}
+
+.sqr250px {
+  width: 250px;
+  height: 250px;
+}
+
+.sqrborderbig {
+  border: 10px solid #666;
+}
+
+.sqrborderthin {
+  border: 5px solid #666;
+}
+
+.space-50px {
+  height: 50px;
 }
 
 /* HEADER CLASSES: logo, nav, search-bar */
@@ -202,9 +238,6 @@ nav ul li:last-child:hover {
 }
 
 .animated-sqr {
-  height: 50px;
-  width: 50px;
-  background-color: #fff;
   transform: rotate(-15deg);
   transform-origin: left;
   border-radius: 5px;
@@ -394,12 +427,10 @@ nav ul li:last-child:hover {
 }
 
 .lp-item10 {
-  justify-content: center;
-  align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.lp-item10 a {
+.more-info-link {
   text-decoration: none;
   border-bottom: 4px solid #333;
   padding-bottom: 4px;
@@ -431,17 +462,18 @@ nav ul li:last-child:hover {
 }
 
 .cl-item {
-  border: 1px solid #000;
   height: 300px;
 }
 
-.cl-item1 .animated-sqr {
-  width: 250px;
-  height: 250px;
-  border: 10px solid #666;
-}
-
 /* TEXT - TITLES AND CONTENT PLACEHOLDERS NOW ON... */
+
+.big-title-placeholder {
+  background-color: #333;
+  width: 300px;
+  height: 43px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
 
 .small-title-placeholder {
   background-color: #666;
@@ -456,4 +488,34 @@ nav ul li:last-child:hover {
   width: 70%;
   height: 20px;
   border-radius: 5px;
+}
+
+/* FEATURED BOOK SECTION STYLE */
+
+.featured-book {
+  margin-top: 75px;
+  padding: 50px 85px;
+  height: 45vh;
+}
+
+.featured-book-left {
+  width: 80%;
+  flex-flow: column;
+}
+
+.featured-book-right {
+  width: 20%;
+}
+
+.featured-book-right img {
+  position: relative;
+  bottom: 75px;
+  transform: rotate(-15deg);
+  transform-origin: left;
+}
+
+.featured-book-right img:hover {
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  transition: 0.3s;
 }
