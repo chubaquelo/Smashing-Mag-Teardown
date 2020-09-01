@@ -120,6 +120,7 @@ img {
 }
 
 .space-50px {
+  width: 100%;
   height: 50px;
 }
 
@@ -327,7 +328,7 @@ nav ul li:last-child:hover {
 /* HERE BEGINS THE SECTION OF "LATEST POSTS", IT'S A GRID UNTIL "SEE ALL RELATED ARTS" */
 
 .latest-posts {
-  grid-template-rows: 100vh 100vh 100vh 100vh 32vh;
+  grid-template-rows: 100vh 100vh 100vh 100vh;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: #f6f3f2;
   row-gap: 45px;
@@ -414,7 +415,10 @@ nav ul li:last-child:hover {
   margin-bottom: 30px;
 }
 
-.white-btn {
+.white-btn,
+.lightgrey-btn,
+.mediumgrey-btn,
+.darkgrey-btn {
   width: 275px;
   background-color: #fff;
   color: #000;
@@ -424,6 +428,24 @@ nav ul li:last-child:hover {
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 30px;
+}
+
+.lightgrey-btn {
+  background-color: #999;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.mediumgrey-btn {
+  background-color: #666;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.darkgrey-btn {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.4rem;
 }
 
 .lp-item10 {
@@ -518,4 +540,27 @@ nav ul li:last-child:hover {
   transform: rotate(0deg);
   transform-origin: bottom;
   transition: 0.3s;
+}
+
+/* OUR GUIDES SECTION STYLE */
+
+.our-guides {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(150px, 1fr);
+  gap: 25px;
+  background-color: #f6f3f2;
+  padding: 50px 50px 10px 50px;
+}
+
+.og-item {
+  border: 1px solid #ccc;
+  /* height: 350px; */
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* FOOTER Style */
+
+footer {
+  height: 100vh;
 }
