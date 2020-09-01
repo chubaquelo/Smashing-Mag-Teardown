@@ -172,7 +172,7 @@ nav {
   width: 53%;
 }
 
-nav ul li {
+.main-nav-li {
   display: inline-flex;
   border-radius: 10px;
   margin-left: 10px;
@@ -181,15 +181,15 @@ nav ul li {
   border: 2px solid #fff;
 }
 
-nav ul li:hover {
+.main-nav-li:hover {
   background-color: rgb(114, 114, 114);
 }
 
-nav ul li:last-child {
+.main-nav-li:last-child {
   background-color: rgb(114, 114, 114);
 }
 
-nav ul li:last-child:hover {
+.main-nav-li:last-child:hover {
   background-color: #bcbcbc;
 }
 
@@ -387,13 +387,13 @@ nav ul li:last-child:hover {
 }
 
 .author-link,
-.author-link a {
+.author-link-a {
   font-size: 16px;
   font-weight: 700;
   color: #666;
 }
 
-.author-link a:hover {
+.author-link-a:hover {
   color: #000;
 }
 
@@ -627,19 +627,19 @@ footer {
   padding: 35px 0;
 }
 
-footer ul li {
+.footer-nav-li {
   display: inline-block;
   font-size: 1.3em;
   padding: 5px 0;
   color: #535353;
 }
 
-footer ul li a {
+.footer-nav-li-a {
   color: #fff;
   text-decoration: none;
 }
 
-footer ul li a:hover {
+.footer-nav-li-a:hover {
   color: #000;
   transition: 0.3s;
   text-decoration: none;
