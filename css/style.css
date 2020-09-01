@@ -576,7 +576,7 @@ nav ul li:last-child:hover {
 /* FOOTER Style */
 
 footer {
-  padding: 35px 75px 20px 75px;
+  padding: 0px 75px 40px 75px;
   flex-flow: column;
   height: 100vh;
 }
@@ -616,7 +616,8 @@ footer ul li a:hover {
 
 .foot-b-1 {
   width: 30%;
-  background-color: red;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .foot-b-2 {
@@ -659,5 +660,6 @@ footer ul li a:hover {
 
 .foot-b-3 {
   width: 30%;
-  background-color: green;
+  align-items: flex-end;
+  justify-content: center;
 }
