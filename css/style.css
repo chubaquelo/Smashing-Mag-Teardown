@@ -31,6 +31,10 @@ body {
   justify-content: center;
 }
 
+.flex-flow-col {
+  flex-flow: column;
+}
+
 .d-grid {
   display: grid;
 }
@@ -90,6 +94,10 @@ img {
 
 .darkgrey-bg {
   background-color: rgb(114, 114, 114);
+}
+
+.font-weight-700 {
+  font-weight: 700;
 }
 
 .ml-300px {
@@ -208,7 +216,6 @@ nav {
   height: 55px;
   padding-left: 50px;
   font-size: 22px;
-  font-weight: 700;
   background-image: url(/img/magnifier.jpg);
   background-repeat: no-repeat;
   background-position: left;
@@ -333,7 +340,6 @@ nav {
 
 .hashtag-li {
   display: inline-block;
-  font-weight: 700;
   padding-right: 35px;
 }
 
@@ -378,7 +384,6 @@ nav {
 .author-link,
 .author-link-a {
   font-size: 16px;
-  font-weight: 700;
   color: #666;
 }
 
@@ -396,11 +401,6 @@ nav {
 
 .latest-posts-arrow-button:hover {
   background-color: #bcbcbc;
-}
-
-.lp-item4,
-.lp-item9 {
-  flex-flow: column;
 }
 
 .lp-item4 img,
@@ -430,7 +430,6 @@ nav {
   width: 275px;
   padding: 15px 20px;
   text-decoration: none;
-  font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 30px;
 }
@@ -469,7 +468,6 @@ nav {
 /* Shipping Ad (blue on original) */
 
 .shipping-ad {
-  flex-flow: column;
   padding: 25px 20%;
 }
 
@@ -519,7 +517,6 @@ nav {
 
 .featured-book-left {
   width: 80%;
-  flex-flow: column;
 }
 
 .featured-book-right {
@@ -568,7 +565,6 @@ nav {
 }
 
 .newsletter button {
-  font-weight: 700;
   font-size: 1.2em;
   width: 20%;
   height: 57px;
@@ -590,7 +586,6 @@ nav {
 
 footer {
   padding: 0 75px 40px 75px;
-  flex-flow: column;
   height: 100vh;
 }
 
@@ -632,7 +627,6 @@ footer {
 
 .foot-b-2 {
   width: 40%;
-  flex-flow: column;
 }
 
 .foot-b-2 .txt {
