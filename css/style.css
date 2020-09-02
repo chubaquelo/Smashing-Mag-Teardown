@@ -174,7 +174,6 @@ nav {
 
 .main-nav-li {
   display: inline-flex;
-  border-radius: 10px;
   margin-left: 10px;
   height: 45px;
   width: 90px;
@@ -202,7 +201,6 @@ nav {
   width: 80%;
   border: 0;
   height: 55px;
-  border-radius: 10px;
   padding-left: 50px;
   font-size: 22px;
   font-weight: 700;
@@ -267,7 +265,6 @@ nav {
 .animated-sqr {
   transform: rotate(-15deg);
   transform-origin: left;
-  border-radius: 5px;
   margin-right: 20px;
 }
 
@@ -282,7 +279,6 @@ nav {
   width: 170px;
   height: 40px;
   border: 1px solid #fff;
-  border-radius: 10px;
   background-color: transparent;
 }
 
@@ -405,7 +401,6 @@ nav {
 
 .lp-item4,
 .lp-item9 {
-  border-radius: 10px;
   flex-flow: column;
   justify-content: center;
   align-items: center;
@@ -437,7 +432,6 @@ nav {
 .darkgrey-btn {
   width: 275px;
   color: #000;
-  border-radius: 5px;
   padding: 15px 20px;
   text-decoration: none;
   font-weight: 700;
@@ -512,7 +506,6 @@ nav {
   background-color: #333;
   width: 300px;
   height: 43px;
-  border-radius: 5px;
   margin: 20px 0;
 }
 
@@ -520,7 +513,6 @@ nav {
   background-color: #666;
   width: 250px;
   height: 30px;
-  border-radius: 5px;
 }
 
 .paragraph-placeholder {
@@ -528,7 +520,6 @@ nav {
   background-color: #999;
   width: 70%;
   height: 20px;
-  border-radius: 5px;
 }
 
 /* FEATURED BOOK SECTION STYLE */
@@ -573,7 +564,6 @@ nav {
 
 .og-item {
   border: 1px solid #ccc;
-  border-radius: 5px;
   padding: 35px;
 }
 
