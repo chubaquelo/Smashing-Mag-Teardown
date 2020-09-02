@@ -26,6 +26,11 @@ body {
   align-items: center;
 }
 
+.flex-center-bottom {
+  align-items: flex-end;
+  justify-content: center;
+}
+
 .d-grid {
   display: grid;
 }
@@ -386,8 +391,6 @@ nav {
 }
 
 .latest-posts-arrow-button {
-  justify-content: center;
-  align-items: center;
   width: 120px;
   height: 120px;
   position: absolute;
@@ -402,8 +405,6 @@ nav {
 .lp-item4,
 .lp-item9 {
   flex-flow: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .lp-item4 img,
@@ -481,8 +482,6 @@ nav {
 .shipping-ad {
   flex-flow: column;
   padding: 25px 20%;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Community links grid */
@@ -640,8 +639,6 @@ footer {
 
 .foot-b-1 {
   width: 30%;
-  align-items: flex-end;
-  justify-content: center;
 }
 
 .foot-b-2 {
@@ -678,6 +675,4 @@ footer {
 
 .foot-b-3 {
   width: 30%;
-  align-items: flex-end;
-  justify-content: center;
 }
