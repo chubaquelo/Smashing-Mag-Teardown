@@ -364,10 +364,6 @@ nav {
   font-size: 28px;
 }
 
-.lp-item h2 a {
-  color: #000;
-}
-
 .lp-item p {
   padding-top: 15px;
   font-size: 1.2em;
@@ -432,7 +428,6 @@ nav {
 .mediumgrey-btn,
 .darkgrey-btn {
   width: 275px;
-  color: #000;
   padding: 15px 20px;
   text-decoration: none;
   font-weight: 700;
@@ -441,22 +436,16 @@ nav {
 }
 
 .lightgrey-btn {
-  /* I didn't use the white-color class for these buttons because is not working */
-  color: #fff;
   background-color: #999;
   font-size: 1.4rem;
 }
 
 .mediumgrey-btn {
-  /* I didn't use the white-color class for these buttons because is not working */
-  color: #fff;
   background-color: #666;
   font-size: 1.4rem;
 }
 
 .darkgrey-btn {
-  /* I didn't use the white-color class for these buttons because is not working */
-  color: #fff;
   background-color: #333;
   font-size: 1.4rem;
 }
