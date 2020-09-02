@@ -1,0 +1,6 @@
+{
+    "editor.cursorStyle": "block",
+    "editor.formatOnType": true,
+    "editor.fontSize": 16,
+    "editor.cursorBlinking": "phase"
+}

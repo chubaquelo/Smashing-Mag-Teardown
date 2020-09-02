@@ -1,0 +1,661 @@
+/* GLOBAL CLASSES */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* stylelint-disable */
+  font-family: AvenirNext, Avenir, BlinkMacSystemFont, "Roboto Slab",
+    "Droid Serif", "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Georgia, serif;
+
+  /* stylelint-enable */
+  color: #333;
+}
+
+body {
+  max-width: 1440px;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center-all {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-bottom {
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flex-flow-col {
+  flex-flow: column;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 3;
+}
+
+.span4 {
+  grid-column: span 4;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.bwfilter {
+  filter: grayscale(100%);
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.black-color {
+  color: #000;
+}
+
+.lightergrey-bg {
+  background: #f6f3f2;
+}
+
+.lightgrey-bg {
+  background-color: #bcbcbc;
+}
+
+.mediumgrey-bg {
+  background-color: rgb(160, 160, 160);
+}
+
+.darkgrey-bg {
+  background-color: rgb(114, 114, 114);
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.txt-deco-none {
+  text-decoration: none;
+}
+
+.height-50px {
+  height: 50px;
+}
+
+.ml-300px {
+  margin-left: 300px;
+}
+
+.b-rad10 {
+  border-radius: 10px;
+}
+
+.b-rad5 {
+  border-radius: 5px;
+}
+
+.txtc {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.seriffy {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.txt-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.cpointer {
+  cursor: pointer;
+}
+
+.sqr50px {
+  width: 50px;
+}
+
+.sqr70px {
+  width: 70px;
+  height: 70px;
+}
+
+.sqr200px {
+  width: 200px;
+  height: 200px;
+}
+
+.sqrborderbig {
+  border: 10px solid #666;
+}
+
+.sqrborderthin {
+  border: 5px solid #666;
+}
+
+.space-25px {
+  width: 100%;
+  height: 25px;
+}
+
+.space-50px {
+  width: 100%;
+}
+
+/* HEADER CLASSES: logo, nav, search-bar */
+
+header {
+  height: 70px;
+  width: 96%;
+  padding: 20px 2% 10px 2%;
+}
+
+.logo {
+  height: 100%;
+  width: 16%;
+  padding-top: 5px;
+}
+
+.logo a {
+  width: 90%;
+}
+
+nav {
+  height: 100%;
+  width: 53%;
+}
+
+.main-nav-li {
+  display: inline-flex;
+  margin-left: 10px;
+  height: 45px;
+  width: 90px;
+  border: 2px solid #fff;
+}
+
+.main-nav-li:hover {
+  background-color: rgb(114, 114, 114);
+}
+
+.main-nav-li:last-child {
+  background-color: rgb(114, 114, 114);
+}
+
+.main-nav-li:last-child:hover {
+  background-color: #bcbcbc;
+}
+
+.search-bar {
+  height: 100%;
+  width: 29%;
+}
+
+.search-bar input {
+  width: 80%;
+  border: 0;
+  height: 55px;
+  padding-left: 50px;
+  font-size: 22px;
+  background-image: url(/img/magnifier.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/* BEGIN OF MAIN ARTICLES DISPLAY STYLING */
+
+.featured-articles-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 160px 560px 560px;
+}
+
+/* General padding for each of 4 main displayed articles */
+.item {
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+/* Item 2 is the where the H1 is */
+.item2 {
+  background: rgb(114, 114, 114);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(114, 114, 114, 1) 50%,
+      rgba(160, 160, 160, 1) 50%
+    );
+
+  /* This 1px margin below is to fix a gradient background pixel line */
+  margin-left: 1px;
+}
+
+.item2 h1 {
+  text-align: center;
+  font-size: 38px;
+  margin: 55px 60px;
+}
+
+.item2 h1 span {
+  padding: 8px;
+}
+
+/* Item 3 is where the red/white color changer switch is */
+.item3 {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/* COLOR SELECTOR STYLE */
+
+.color-changer-cont {
+  margin: 55px 10px;
+  width: 80%;
+  justify-content: left;
+  align-items: center;
+}
+
+.animated-sqr {
+  transform: rotate(-15deg);
+  transform-origin: left;
+  margin-right: 20px;
+}
+
+.animated-sqr:hover {
+  transform: rotate(0deg);
+  transform-origin: left;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.seriously-red {
+  width: 170px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.seriously-red:hover {
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/* MAIN ARTICLES BLOCKS STYLE */
+
+.author-main-cont {
+  align-items: flex-start;
+  justify-content: left;
+  height: 100px;
+  margin-top: 80px;
+}
+
+.author-main-cont .animated-sqr {
+  width: 75px;
+  height: 75px;
+}
+
+.author-main-cont .author-wrote {
+  width: 200px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+.article-title-span {
+  width: 90%;
+  align-items: flex-start;
+}
+
+.article-title-span h2 {
+  font-size: 42px;
+  background-color: transparent;
+}
+
+.article-title-span h2 span {
+  font-size: 16px;
+}
+
+.hashtags {
+  margin-top: 100px;
+}
+
+.hashtag-li {
+  display: inline-block;
+  padding-right: 35px;
+}
+
+.art-bottom-arrow {
+  height: 120px;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+/* HERE BEGINS THE SECTION OF "LATEST POSTS", IT'S A GRID UNTIL "SEE ALL RELATED ARTS" */
+
+.latest-posts {
+  grid-template-rows: 100vh 100vh 100vh 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f6f3f2;
+  row-gap: 45px;
+  padding: 15px;
+}
+
+.lp-item {
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.lp-item h2 {
+  padding: 15px 0;
+  font-size: 28px;
+}
+
+.lp-item p {
+  padding-top: 15px;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.date-published {
+  font-size: 10px;
+  color: #666;
+}
+
+.author-link,
+.author-link-a {
+  font-size: 16px;
+  color: #666;
+}
+
+.author-link-a:hover {
+  color: #000;
+}
+
+.latest-posts-arrow-button {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.latest-posts-arrow-button:hover {
+  background-color: #bcbcbc;
+}
+
+.lp-item4 img,
+.lp-item9 img {
+  margin: 0 auto;
+}
+
+.ad-title {
+  font-size: 2.8rem;
+  margin: 25px 0;
+  text-decoration: underline #666;
+}
+
+.ad-txt {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+
+.white-btn,
+.lightgrey-btn,
+.mediumgrey-btn,
+.darkgrey-btn {
+  width: 275px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.lightgrey-btn {
+  background-color: #999;
+  font-size: 1.4rem;
+}
+
+.mediumgrey-btn {
+  background-color: #666;
+  font-size: 1.4rem;
+}
+
+.darkgrey-btn {
+  background-color: #333;
+  font-size: 1.4rem;
+}
+
+.lp-item10 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.more-info-link {
+  border-bottom: 4px solid #333;
+  padding-bottom: 4px;
+}
+
+.focus-grow:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+/* Shipping Ad (blue on original) */
+
+.shipping-ad {
+  padding: 25px 20%;
+}
+
+/* Community links grid */
+
+.community-links {
+  padding-top: 25px;
+  justify-content: center;
+  gap: 10px;
+  grid-template-rows: 320px;
+  grid-template-columns: repeat(2, 8% 35%);
+}
+
+.cl-item {
+  height: 325px;
+}
+
+/* TEXT - TITLES AND CONTENT PLACEHOLDERS NOW ON... */
+
+.big-title-placeholder {
+  background-color: #333;
+  width: 300px;
+  height: 43px;
+  margin: 20px 0;
+}
+
+.small-title-placeholder {
+  background-color: #666;
+  width: 250px;
+  height: 30px;
+}
+
+.paragraph-placeholder {
+  margin-top: 10px;
+  background-color: #999;
+  width: 70%;
+  height: 20px;
+}
+
+/* FEATURED BOOK SECTION STYLE */
+
+.featured-book {
+  margin-top: 75px;
+  padding: 50px 85px;
+  height: 45vh;
+}
+
+.featured-book-left {
+  width: 80%;
+}
+
+.featured-book-right {
+  width: 20%;
+}
+
+.featured-book-right img {
+  position: relative;
+  bottom: 75px;
+  transform: rotate(-15deg);
+  transform-origin: left;
+}
+
+.featured-book-right img:hover {
+  transform: rotate(0deg);
+  transform-origin: bottom;
+  transition: 0.3s;
+}
+
+/* OUR GUIDES SECTION STYLE */
+
+.our-guides {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(150px, 1fr);
+  gap: 25px;
+  background-color: #f6f3f2;
+  padding: 50px 50px 10px 50px;
+}
+
+.og-item {
+  border: 1px solid #ccc;
+  padding: 35px;
+}
+
+.newsletter {
+  margin: 25px 0;
+}
+
+.newsletter input {
+  width: 70%;
+  font-size: 20px;
+  height: 55px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 20px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  font-size: 1.2em;
+  width: 20%;
+  height: 57px;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  border: 1px solid #ccc;
+}
+
+.newsletter-call {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
+/* FOOTER Style */
+
+footer {
+  padding: 0 75px 40px 75px;
+  height: 100vh;
+}
+
+.footer-nav {
+  padding: 35px 0;
+}
+
+.footer-nav-li {
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 5px 0;
+  color: #535353;
+}
+
+.footer-nav-li-a {
+  text-decoration: none;
+}
+
+.footer-nav-li-a:hover {
+  color: #000;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.bullet {
+  font-size: 30px;
+}
+
+/* FOOTER but only last row (3 cols flex) */
+
+.footer-bottom-cont {
+  height: 100px;
+  width: 100%;
+}
+
+.foot-b-1 {
+  width: 30%;
+}
+
+.foot-b-2 {
+  width: 40%;
+}
+
+.foot-b-2 .txt {
+  width: 200px;
+  height: 15px;
+  margin-top: 15px;
+}
+
+.foot-b-2-a {
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.foot-b-2-a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer-nav-2 {
+  height: 20px;
+  padding: 20px 0 0 0;
+}
+
+.foot-b-2 ul li {
+  display: inline-flex;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.foot-b-3 {
+  width: 30%;
+}
